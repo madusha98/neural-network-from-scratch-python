@@ -24,6 +24,7 @@ class NerualNetwork:
         self.bias_o = np.matrix(np.random.uniform(-1, 1, (self.output_nodes, 1)))
 
         self.learning_rate = learning_rate
+        self.iterations = 0
 
 
     def feedforward(self, input_array):
@@ -92,6 +93,8 @@ class NerualNetwork:
         self.weights_ih += weight_ih_deltas
         # Adjust the bias by its deltas (which is just the gradients)
         self.bias_h += hidden_gradient
+
+        self.iterations += 1
 
 
 

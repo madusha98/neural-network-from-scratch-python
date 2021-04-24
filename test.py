@@ -22,12 +22,12 @@ training_data = [
   }
 ]
 
-ITERATIONS = 10000
+ITERATIONS = 50000
 LEARNING_RATE = 0.1
 
 def testXOR():
 
-    nn = NerualNetwork(2,2,1, LEARNING_RATE)
+    nn = NerualNetwork(2,3,1, LEARNING_RATE)
 
     # show a progress bar
     printProgressBar(0, ITERATIONS, prefix = 'Progress:', suffix = 'Complete | 0 Iterations', length = 50)
