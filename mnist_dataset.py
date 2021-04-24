@@ -10,12 +10,11 @@ from multiprocessing import Process
 import keyboard
 import time
 
-
+# Uncomment to download the dataset if it's not already downloaded
 # mnist.init()
 
 data = mnist.load()
 
-# print(data[1][2])
 
 ITERATIONS = 100000
 LEARNING_RATE = 0.1
