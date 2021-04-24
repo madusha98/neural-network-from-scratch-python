@@ -31,7 +31,7 @@ def save_mnist():
     print("Save complete.")
 
 def init():
-    # download_mnist()
+    download_mnist()
     save_mnist()
 
 def load():
